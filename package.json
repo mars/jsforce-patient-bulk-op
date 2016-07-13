@@ -1,0 +1,35 @@
+{
+  "name": "jsforce-patient-bulk-op",
+  "version": "1.0.0",
+  "description": "Patiently bulk insert/upsert to Salesforce via jsforce; adjustable timeout & poll frequency",
+  "engines": {
+    "node": "6.2.x"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "`npm bin`/ava **/*-test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mars/jsforce-patient-bulk-op.git"
+  },
+  "keywords": [
+    "salesforce",
+    "api",
+    "jsforce"
+  ],
+  "author": "m@marsorange.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mars/jsforce-patient-bulk-op/issues"
+  },
+  "homepage": "https://github.com/mars/jsforce-patient-bulk-op#readme",
+  "peerDependencies": {
+    "jsforce": ">=1.6"
+  },
+  "devDependencies": {
+    "ava": "^0.15.2",
+    "jsforce-connection": "^1.0.0",
+    "nock": "^8.0.0"
+  }
+}
