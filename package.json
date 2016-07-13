@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/mars/jsforce-patient-bulk-op#readme",
   "peerDependencies": {
-    "jsforce": ">=1.6"
+    "jsforce": "^1.6.0"
   },
   "devDependencies": {
     "ava": "^0.15.2",
