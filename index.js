@@ -1,11 +1,11 @@
 module.exports = function jsforcePatientBulkOp(
-  salesforceApi,
-  objectName,
-  objectRecords,
-  operation     = 'insert',
-  timeout       = 601000,
-  pollInterval  = 2000,
-  logger        = () => {}
+  salesforceApi,              // jsforce conenction
+  objectName,                 // Salesforce object name
+  objectRecords,              // Array of object records
+  operation     = 'insert',   // Any Bulk API operation
+  timeout       = 601000,     // Salesforce kills & requeues after 10-minutes
+  pollInterval  = 2000,       // Ping pong
+  logger        = () => {}    // A function to call with log messages
 ) {
   return new Promise((resolve, reject) => {
     try {
