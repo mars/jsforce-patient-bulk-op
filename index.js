@@ -16,6 +16,9 @@ module.exports = function jsforcePatientBulkOp(
       let batchId;
 
       batch.execute(objectRecords);
+      batch.on('error', function(error) {
+        reject(error);
+      }); 
       batch.on('queue', function(batchInfo) {
         try {
           batchId = batchInfo.id;
