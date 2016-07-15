@@ -1,6 +1,6 @@
 {
   "name": "jsforce-patient-bulk-op",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Patiently bulk insert/upsert to Salesforce via jsforce; adjustable timeout & poll frequency",
   "engines": {
     "node": "6.2.x"
