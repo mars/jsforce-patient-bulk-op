@@ -33,6 +33,17 @@ test('Eventually returns the Bulk API response', t => {
     })
 })
 
+test('Eventually returns an empty response when no records are provided', t => {
+  const mockRecords = []
+  const expectedResponse = []
+
+  return patientBulkOp({}, 'Account', mockRecords, 'insert')
+    .then( response => {
+      t.deepEqual(response, expectedResponse)
+    })
+})
+
+
 
 function mockSuccessfulBulkOp() {
 

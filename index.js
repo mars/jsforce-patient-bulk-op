@@ -9,6 +9,10 @@ module.exports = function jsforcePatientBulkOp(
 ) {
   return new Promise((resolve, reject) => {
     try {
+      if (objectRecords == null || objectRecords.length === 0) {
+        return resolve([]);
+      }
+
       const job = salesforceApi.bulk.createJob(objectName, operation);
       const batch = job.createBatch();
 
